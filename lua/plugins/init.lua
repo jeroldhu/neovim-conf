@@ -122,7 +122,7 @@ local plugins = {
   },
 
   {
-    "windrivder/fzf-lua",
+    "jeroldhu/fzf-lua",
     lazy = true,
   },
 
@@ -221,7 +221,8 @@ local plugins = {
   },
 
   {
-    "windrivder/symbols-outline.nvim",
+    -- "windrivder/symbols-outline.nvim",
+    "jeroldhu/symbols-outline.nvim",
     config = function()
       require("plugins.others").outline()
     end
