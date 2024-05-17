@@ -6,18 +6,18 @@ end
 
 local options = {
   ensure_installed = {
-    "clangd",
-    "rust-analyzer",
-    "python-lsp-server",
-    "gopls",
-    "lua-language-server",
-    "svelte-language-server",
-    "vue-language-server",
+    -- vue
     "typescript-language-server",
-    "json-lsp",
+    "vue-language-server",
     "bash-language-server",
+    "gopls",
+    "json-lsp",
+    "lua-language-server",
+    "pyright",
+    "rust-analyzer"
   },
-  PATH = "skip",
+  -- PATH配置为安装路径
+  PATH = vim.fn.stdpath("data") .. "/mason/bin",
   ui = {
     icons = {
       package_pending = " ",

@@ -221,7 +221,6 @@ local plugins = {
   },
 
   {
-    -- "windrivder/symbols-outline.nvim",
     "jeroldhu/symbols-outline.nvim",
     config = function()
       require("plugins.others").outline()
