@@ -6,15 +6,14 @@ end
 
 local options = {
   ensure_installed = {
-    -- vue
     "typescript-language-server",
-    "vue-language-server",
+    "vetur-vls",
     "bash-language-server",
     "gopls",
     "json-lsp",
     "lua-language-server",
     "pyright",
-    "rust-analyzer"
+    "rust-analyzer",
   },
   -- PATH配置为安装路径
   PATH = vim.fn.stdpath("data") .. "/mason/bin",

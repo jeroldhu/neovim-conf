@@ -38,15 +38,16 @@ capabilities.textDocument.completion.completionItem = {
 local flags = { debounce_text_changes = 150 }
 
 local servers = {
+  "tsserver",
   "clangd",
   "rust_analyzer",
-  "tsserver",
   "svelte",
-  "vuels",
   "jsonls",
   "bashls",
   "taplo",
+  "vuels"
 }
+
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = M.on_attach,
@@ -57,6 +58,14 @@ for _, lsp in ipairs(servers) do
 end
 
 local util = require("lspconfig/util")
+
+-- nvim_lsp.vuels.setup {
+--   cmd = { "vue-language-server", "--stdio" },
+--   on_attach = M.on_attach,
+--   capabilities = capabilities,
+--   single_file_support = true,
+--   flags = flags,
+-- }
 
 nvim_lsp.pylsp.setup {
   on_attach = M.on_attach,
@@ -73,7 +82,6 @@ nvim_lsp.pylsp.setup {
       }
     }
   }
-
 }
 
 nvim_lsp.rust_analyzer.setup {
