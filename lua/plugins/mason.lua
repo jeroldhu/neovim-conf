@@ -12,8 +12,9 @@ local options = {
     "gopls",
     "json-lsp",
     "lua-language-server",
-    "pyright",
     "rust-analyzer",
+    "html-lsp",
+    "python-lsp-server",
   },
   -- PATH配置为安装路径
   PATH = vim.fn.stdpath("data") .. "/mason/bin",

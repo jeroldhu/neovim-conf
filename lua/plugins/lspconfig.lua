@@ -45,7 +45,8 @@ local servers = {
   "jsonls",
   "bashls",
   "taplo",
-  "vuels"
+  "vuels",
+  "html",
 }
 
 for _, lsp in ipairs(servers) do
