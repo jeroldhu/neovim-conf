@@ -180,7 +180,7 @@ M.outline = function()
       fold_all = "W",
       unfold_all = "E",
       fold_reset = "R",
-    },
+    }
   })
 end
 
@@ -241,7 +241,7 @@ M.bufferline = function()
       truncate_names = true,
       separator_style = "thin",
       enforce_regular_tabs = true,
-    }
+    },
   })
 end
 

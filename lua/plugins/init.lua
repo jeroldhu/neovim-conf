@@ -251,6 +251,19 @@ local plugins = {
     version = "*",
     dependencies = 'nvim-tree/nvim-web-devicons',
     config = function()
+      -- 配置vue图标
+      require 'nvim-web-devicons'.setup {
+        override = {
+          vue = {
+            icon = "﵂",
+            color = "#41B883",
+            cterm_color = "65",
+            name = "Vue"
+          }
+        },
+        default = true
+      }
+
       require("plugins.others").bufferline()
     end
   },
