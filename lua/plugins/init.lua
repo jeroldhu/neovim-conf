@@ -267,7 +267,7 @@ local plugins = {
       require("plugins.others").bufferline()
     end
   },
-  --[[ {
+  {
     "jackMort/ChatGPT.nvim",
     event = "VeryLazy",
     config = function()
@@ -289,7 +289,7 @@ local plugins = {
       "folke/trouble.nvim",
       "nvim-telescope/telescope.nvim"
     }
-  } ]]
+  }
   --[[ {
     'natecraddock/workspaces.nvim',
     config = function()
