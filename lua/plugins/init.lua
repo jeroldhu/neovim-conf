@@ -259,6 +259,12 @@ local plugins = {
             color = "#41B883",
             cterm_color = "65",
             name = "Vue"
+          },
+          dockerfile = {
+            icon = "",
+            color = "#384d54",
+            cterm_color = "59",
+            name = "Dockerfile"
           }
         },
         default = true
